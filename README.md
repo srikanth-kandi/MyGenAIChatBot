@@ -163,3 +163,112 @@
                     response = "Failed to reply"
             return response
         ```
+
+**Publish your code to Hugging Face**
+
+- Login to Hugging Face from Google Colab
+
+    - Create a Hugging Face token and Copy
+
+        - Login to Hugging Face <a href="https://huggingface.co/" target="_blank">https://huggingface.co/</a>
+
+        - Open <a href="https://huggingface.co/settings/tokens" target="_blank">https://huggingface.co/settings/tokens</a>
+
+        - Click on `New token`
+
+        - Add a Name for the Token
+
+        - Choose `write` Role for the Token
+
+        - Click on `Generate a token`
+
+        - Copy the Token
+
+    - Click on Play button to enter Hugging Face Token
+
+        ![Google Colab Hugging Face Token](./images/google-colab-hugging-face-token.png)
+
+    - Now paste the Hugging Face token in the textbox provided and click on `Login`
+
+        ![Google Colab Hugging Face Token Login](./images/google-colab-hugging-face-token-login.png)
+
+- **Create Hugging Face API to push code from Google Colab**
+
+    - Click on the Play button to create API
+
+        ![Google Colab Hugging Face API](./images/google-colab-hugging-face-api.png)
+
+- **Adding Hugging Face Repository ID**
+
+    - Copy Hugging Face Repository ID by opening the Hugging Face Repo Created
+
+        ![Hugging Face Repo ID](./images/hugging-face-repo-id.png)
+
+    - Replace your Repo ID
+
+        ![Replace Hugging Face Repo ID](./images/replace-hugging-face-repo-id.png)
+
+    - Click on Play button to assign Hugging Face Repo ID
+
+        ![Replace Hugging Face Repo ID Play Button](./images/replace-hugging-face-repo-id-play.png)
+
+- **Add `OPENAI_API_KEY` in Hugging Face Repository secrets**
+
+    - Click on Settings Button
+
+        ![Hugging Face Settings Button](./images/hugging-face-settings-button.png)
+
+    - Go to `Variables and secrets` section
+
+        ![Hugging Face Variables and secrets section](./images/hugging-face-variables-and-secrets-section.png)
+
+    - Click on `New secret`
+
+        ![Hugging Face New secret](./images/hugging-face-new-secret.png)
+
+    - Enter Name as `OPENAI_API_KEY` and Value as your OpenAI API Key
+
+        ![Hugging Face Name and Value](./images/hugging-face-name-and-value.png)
+
+- **Load files App and Requirements file**
+
+    - Click on the Play button to download files
+
+        ![Google Colab Download Files](./images/google-colab-download-files.png)
+
+    - You can see downloaded files here
+
+        ![Google Colab Downloaded Files](./images/google-colab-downloaded-files.png)
+
+- **You can edit the downloaded files**
+
+    - Click on the `app.py` file
+
+        ![Google Colab Edit app.py](./images/google-colab-edit-app-py.png)
+
+    - The file will be opened and you can edit there and save
+
+        ![Google Colab Modify app.py](./images/google-colab-modify-app-py.png)
+
+- **Push your code to Hugging Face**
+
+    - Click on Play button
+
+        ![Google Colab api upload_file](./images/hugging-face-push-code.png)
+
+    - Now in your space, you should see it is `Building`
+
+        ![Hugging Face Building](./images/hugging-face-building.png)
+
+    - On Succesful build, you should see `Running`
+
+        ![Hugging Face Running](./images/hugging-face-running.png)
+
+    - If the Building fails, you will see a `Runtime error` with some errors below
+
+        ![Hugging Face Runtime Error](./images/hugging-face-runtime-error.png)
+
+    - Click on Logs to check more details about the `error`
+
+
+**Show some ❤️ by starring the repository!**
