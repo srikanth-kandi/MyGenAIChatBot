@@ -99,7 +99,7 @@
 
 - **Assigning the values for template, prompt, and memory**
 
-    - You can update the first line of the template with <a href="#" target="_blank">Prompts and Examples</a> provided
+    - You can update the first line of the template with <a href="https://inky-ironclad-8d2.notion.site/Prompts-and-Examples-d8e43f5d3e7e451a99e50a9bd3643ada" target="_blank">Prompts and Examples</a> provided
 
     - Click on the Play button
 
@@ -123,7 +123,7 @@
 
 - **Create a Chat Interface using Gradio**
 
-    - We are creating the `ChatInterface` from gradio and providing a function `get_text_response` and also examples from <a href="#" target="_blank">Prompts and Examples</a> provided
+    - We are creating the `ChatInterface` from gradio and providing a function `get_text_response` and also examples from <a href="https://inky-ironclad-8d2.notion.site/Prompts-and-Examples-d8e43f5d3e7e451a99e50a9bd3643ada" target="_blank">Prompts and Examples</a> provided
 
     - Check for other arguments <a href="https://www.gradio.app/docs/chatinterface" target="_blank">here</a>
 
