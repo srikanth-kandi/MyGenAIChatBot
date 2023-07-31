@@ -15,8 +15,6 @@
 
     - Check your API key usage <a href="https://platform.openai.com/account/usage" target="_blank">here</a>
 
-<br>
-
 - **Creating Open AI Account with New Mail and New Phone Number:**
 
     - Open <a href="https://openai.com/" target="_blank">https://openai.com</a>
@@ -75,13 +73,13 @@
 
 - **Click on the Play button to Install the Packages**
 
-![Google Colab pip install section](./images/google-colab-pip-install-section.png)
+    ![Google Colab pip install section](./images/google-colab-pip-install-section.png)
 
 - **Click on the Play button to import the required things to build the application**
 
-![Google Colab import section](./images/google-colab-import-section.png)
+    ![Google Colab import section](./images/google-colab-import-section.png)
 
-- **Get the Open AI API Key and set it as environmental variable
+- **Get the Open AI API Key and set it as environmental variable**
 
     - Generate API Key
 
@@ -154,14 +152,14 @@
 
         ```python
         def get_text_response(user_message,history):
-        try:
-            response = llm_chain.predict(user_message = user_message)
-        except Exception as e:
-            print("Error:", e)
             try:
-                print("Error:", e.error.message)
-                response = "Failed to reply: " + e.error.message
+                response = llm_chain.predict(user_message = user_message)
             except Exception as e:
-                response = "Failed to reply"
-        return response
+                print("Error:", e)
+                try:
+                    print("Error:", e.error.message)
+                    response = "Failed to reply: " + e.error.message
+                except Exception as e:
+                    response = "Failed to reply"
+            return response
         ```
