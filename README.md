@@ -270,5 +270,6 @@
 
     - Click on Logs to check more details about the `error`
 
+---
 
-**Show some ❤️ by starring the repository!**
+<h1 style="text-align: center;"><b>Show some ❤️ by ⭐ the repository!</b></h1>
