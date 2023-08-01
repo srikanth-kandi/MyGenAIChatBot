@@ -272,4 +272,4 @@
 
 ---
 
-<h1 style="text-align: center;"><b>Show some ❤️ by ⭐ the repository!</b></h1>
+<div align="center"><b>Show some ❤️ by starring ⭐ this repository!</b></div>
