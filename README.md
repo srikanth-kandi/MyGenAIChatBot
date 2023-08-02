@@ -272,4 +272,4 @@
 
 ---
 
-<div align="center"><b>Show some ❤️ by starring ⭐ this repository!</b></div>
+<h3 align = 'center'>Show some ❤️ by starring ⭐ this repository!</h3>
