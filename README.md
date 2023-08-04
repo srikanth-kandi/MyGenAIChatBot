@@ -1,6 +1,8 @@
-# ChatBot with Open AI and LangChain
+# ChatBot with OpenAI and LangChain
 
 [Main Handbook](https://inky-ironclad-8d2.notion.site/Generative-AI-Workshop-bfb0123ccf6945ebbfa5bf3328917423), [This handbook](https://inky-ironclad-8d2.notion.site/ChatBot-with-Open-AI-and-LangChain-Handbook-36aee0b81838457e91a14c4ddf3378ce)
+
+<!----Prerequisites---->
 
 <details>
 <summary><b>Prerequisites</b></summary>
@@ -71,118 +73,159 @@
     - Once you are successfully logged in a new Google Colab Notebook with the given code will be opened
 </details>
 
-- **Click on the Play button to Install the Packages**
+<!------Install the required packages-------->
+
+<details>
+<summary><b>Install the required packages</b></summary>
+
+- Click on the Play button to Install the Packages
 
     ![Google Colab pip install section](./images/google-colab-pip-install-section.png)
+</details>
 
-- **Click on the Play button to import the required things to build the application**
+<!-----Importing the required packages------->
+
+<details>
+<summary><b>Importing the required packages</b></summary>
+
+- Click on the Play button to import the required things to build the application
 
     ![Google Colab import section](./images/google-colab-import-section.png)
+</details>
 
-- **Get the Open AI API Key and set it as environmental variable**
+<!----Get the OpenAI API Key and Set as ENV variable---->
 
-    - Generate API Key
+<details>
+<summary><b>Get the OpenAI API Key and set it as environmental variable</b></summary>
 
-        -  Go to <a href="https://platform.openai.com/account/api-keys" target="_blank">https://platform.openai.com/account/api-keys</a>
+- Generate API Key
 
-        - Click on `+ Create new secret key`
+    -  Go to <a href="https://platform.openai.com/account/api-keys" target="_blank">https://platform.openai.com/account/api-keys</a>
 
-        - Copy the Secret Key for your use
+    - Click on `+ Create new secret key`
 
-    - Replace your `OPENAI_API_KEY` with your own API Key
+    - Copy the Secret Key for your use
 
-        ![Google Colab OpenAI API Key](./images/google-colab-openai-api-key.png)
+- Replace your `OPENAI_API_KEY` with your own API Key
 
-    - Click on the Play button
+    ![Google Colab OpenAI API Key](./images/google-colab-openai-api-key.png)
 
-        ![Google Colab OpenAI API Key Play Button](./images/google-colab-openai-api-key-play.png)
+- Click on the Play button
 
-- **Assigning the values for template, prompt, and memory**
+    ![Google Colab OpenAI API Key Play Button](./images/google-colab-openai-api-key-play.png)
+</details>
 
-    - You can update the first line of the template with <a href="./prompts-and-examples.md" target="_blank">Prompts and Examples</a> provided
+<!----Assigning the values for template, prompt, and memory---->
 
-    - Click on the Play button
+<details>
+<summary><b>Assigning the values for template, prompt, and memory</b></summary>
 
-        ![Google Colab template section](./images/google-colab-template-section.png)
+- You can update the first line of the template with <a href="./prompts-and-examples.md" target="_blank">Prompts and Examples</a> provided
 
-- **Initializing LLM Chain using OpenAI**
+- Click on the Play button
 
-    - Using `ChatOpenAI` method we are creating an <a href="https://js.langchain.com/docs/api/chains/classes/LLMChain" target="_blank">LLM Chain</a>
+    ![Google Colab template section](./images/google-colab-template-section.png)
+</details>
 
-    - Click on the Play button
+<!----Initializing LLM Chain using OpenAI---->
 
-        ![Google Colab LLM Chain section](./images/google-colab-llm-chain-section.png)
+<details>
+<summary><b>Initializing LLM Chain using OpenAI</b></summary>
 
-- **Define a function to generate the response for the question you ask**
+- Using `ChatOpenAI` method we are creating an <a href="https://js.langchain.com/docs/api/chains/classes/LLMChain" target="_blank">LLM Chain</a>
 
-    - From the initialized `llm_chain` we will predict the response
+- Click on the Play button
 
-    - Click on the Play button
+    ![Google Colab LLM Chain section](./images/google-colab-llm-chain-section.png)
+</details>
 
-        ![Google Colab LLM Chain Response](./images/google-colab-llm-chain-response.png)
+<!-----Defining a function to generate the response for the question you ask---->
 
-- **Create a Chat Interface using Gradio**
+<details>
+<summary><b>Define a function to generate the response for the question you ask</b></summary>
 
-    - We are creating the `ChatInterface` from gradio and providing a function `get_text_response` and also examples from <a href="./prompts-and-examples.md" target="_blank">Prompts and Examples</a> provided
+- From the initialized `llm_chain` we will predict the response
 
-    - Check for other arguments <a href="https://www.gradio.app/docs/chatinterface" target="_blank">here</a>
+- Click on the Play button
 
-    - Click on the Play button to create an interface
+    ![Google Colab LLM Chain Response](./images/google-colab-llm-chain-response.png)
+</details>
 
-        ![Google Colab Gradio Chat Interface](./images/google-colab-gradio-chat-interface.png)
+<!-----Creating a Chat Interface using Gradio------->
 
-- **Launch your ChatBot with Gradio App**
+<details>
+<summary><b>Create a Chat Interface using Gradio</b></summary>
 
-    - Click on the Play button to launch the App
+- We are creating the `ChatInterface` from gradio and providing a function `get_text_response` and also examples from <a href="./prompts-and-examples.md" target="_blank">Prompts and Examples</a> provided
 
-        ![Google Colab Gradio Chat Interface Launch](./images/google-colab-gradio-chat-interface-launch.png)
+- Check for other arguments <a href="https://www.gradio.app/docs/chatinterface" target="_blank">here</a>
 
-- **Now you can try asking questions in your ChatBot**
+- Click on the Play button to create an interface
 
-- **If you are getting any errors**
+    ![Google Colab Gradio Chat Interface](./images/google-colab-gradio-chat-interface.png)
+</details>
 
-    -  Keep print statements to identify the issue
+<!-----Launch your ChatBot with Gradio App------>
 
-    - To identify the error you are getting please add `debug = True` while launching the gradio app
+<details>
+<summary><b>Launch your ChatBot with Gradio App</b></summary>
 
-        ```python
-        if __name__ == "__main__":
-            demo.launch(debug = True)
-        ```
+- Click on the Play button to launch the App
 
-        ```python
-        def get_text_response(user_message,history):
+    ![Google Colab Gradio Chat Interface Launch](./images/google-colab-gradio-chat-interface-launch.png)
+</details>
+
+### Now you can try asking questions in your ChatBot
+
+<!----If you are getting any errors---->
+
+<details>
+<summary><b>If you are getting any errors</b></summary>
+
+-  Keep print statements to identify the issue
+
+- To identify the error you are getting please add `debug = True` while launching the gradio app
+
+    ```python
+    if __name__ == "__main__":
+        demo.launch(debug = True)
+    ```
+
+    ```python
+    def get_text_response(user_message,history):
+        try:
+            response = llm_chain.predict(user_message = user_message)
+        except Exception as e:
+            print("Error:", e)
             try:
-                response = llm_chain.predict(user_message = user_message)
+                print("Error:", e.error.message)
+                response = "Failed to reply: " + e.error.message
             except Exception as e:
-                print("Error:", e)
-                try:
-                    print("Error:", e.error.message)
-                    response = "Failed to reply: " + e.error.message
-                except Exception as e:
-                    response = "Failed to reply"
-            return response
-        ```
+                response = "Failed to reply"
+        return response
+    ```
+</details>
 
-**Publish your code to Hugging Face**
+### Publish your code to Hugging Face
 
-- Login to Hugging Face from Google Colab
+<details>
+<summary><b>Login to Hugging Face from Google Colab</b></summary>
 
-    - Create a Hugging Face token and Copy
+- Create a Hugging Face token and Copy
 
-        - Login to Hugging Face <a href="https://huggingface.co/" target="_blank">https://huggingface.co/</a>
+    - Login to Hugging Face <a href="https://huggingface.co/" target="_blank">https://huggingface.co/</a>
 
-        - Open <a href="https://huggingface.co/settings/tokens" target="_blank">https://huggingface.co/settings/tokens</a>
+    - Open <a href="https://huggingface.co/settings/tokens" target="_blank">https://huggingface.co/settings/tokens</a>
 
-        - Click on `New token`
+    - Click on `New token`
 
-        - Add a Name for the Token
+    - Add a Name for the Token
 
-        - Choose `write` Role for the Token
+    - Choose `write` Role for the Token
 
-        - Click on `Generate a token`
+    - Click on `Generate a token`
 
-        - Copy the Token
+    - Copy the Token
 
     - Click on Play button to enter Hugging Face Token
 
@@ -191,84 +234,109 @@
     - Now paste the Hugging Face token in the textbox provided and click on `Login`
 
         ![Google Colab Hugging Face Token Login](./images/google-colab-hugging-face-token-login.png)
+</details>
 
-- **Create Hugging Face API to push code from Google Colab**
+<!-----Create Hugging Face API to push code from Google Colab------>
 
-    - Click on the Play button to create API
+<details>
+<summary><b>Create Hugging Face API to push code from Google Colab</b></summary>
 
-        ![Google Colab Hugging Face API](./images/google-colab-hugging-face-api.png)
+- Click on the Play button to create API
 
-- **Adding Hugging Face Repository ID**
+    ![Google Colab Hugging Face API](./images/google-colab-hugging-face-api.png)
+</details>
 
-    - Copy Hugging Face Repository ID by opening the Hugging Face Repo Created
+<!----Adding Hugging Face Repository ID----->
 
-        ![Hugging Face Repo ID](./images/hugging-face-repo-id.png)
+<details>
+<summary><b>Adding Hugging Face Repository ID</b></summary>
 
-    - Replace your Repo ID
+- Copy Hugging Face Repository ID by opening the Hugging Face Repo Created
 
-        ![Replace Hugging Face Repo ID](./images/replace-hugging-face-repo-id.png)
+    ![Hugging Face Repo ID](./images/hugging-face-repo-id.png)
 
-    - Click on Play button to assign Hugging Face Repo ID
+- Replace your Repo ID
 
-        ![Replace Hugging Face Repo ID Play Button](./images/replace-hugging-face-repo-id-play.png)
+    ![Replace Hugging Face Repo ID](./images/replace-hugging-face-repo-id.png)
 
-- **Add `OPENAI_API_KEY` in Hugging Face Repository secrets**
+- Click on Play button to assign Hugging Face Repo ID
 
-    - Click on Settings Button
+    ![Replace Hugging Face Repo ID Play Button](./images/replace-hugging-face-repo-id-play.png)
+</details>
 
-        ![Hugging Face Settings Button](./images/hugging-face-settings-button.png)
+<!-----Adding OpenAI API Key to Hugging Face----->
 
-    - Go to `Variables and secrets` section
+<details>
+<summary><b>Add OPENAI_API_KEY in Hugging Face Repository secrets</b></summary>
 
-        ![Hugging Face Variables and secrets section](./images/hugging-face-variables-and-secrets-section.png)
+- Click on Settings Button
 
-    - Click on `New secret`
+    ![Hugging Face Settings Button](./images/hugging-face-settings-button.png)
 
-        ![Hugging Face New secret](./images/hugging-face-new-secret.png)
+- Go to `Variables and secrets` section
 
-    - Enter Name as `OPENAI_API_KEY` and Value as your OpenAI API Key
+    ![Hugging Face Variables and secrets section](./images/hugging-face-variables-and-secrets-section.png)
 
-        ![Hugging Face Name and Value](./images/hugging-face-name-and-value.png)
+- Click on `New secret`
 
-- **Load files App and Requirements file**
+    ![Hugging Face New secret](./images/hugging-face-new-secret.png)
 
-    - Click on the Play button to download files
+- Enter Name as `OPENAI_API_KEY` and Value as your OpenAI API Key
 
-        ![Google Colab Download Files](./images/google-colab-download-files.png)
+    ![Hugging Face Name and Value](./images/hugging-face-name-and-value.png)
+</details>
 
-    - You can see downloaded files here
+<!-----Load Application Files and Requirements file----->
 
-        ![Google Colab Downloaded Files](./images/google-colab-downloaded-files.png)
+<details>
+<summary><b>Load Application and Requirement files</b></summary>
 
-- **You can edit the downloaded files**
+- Click on the Play button to download files
 
-    - Click on the `app.py` file
+    ![Google Colab Download Files](./images/google-colab-download-files.png)
 
-        ![Google Colab Edit app.py](./images/google-colab-edit-app-py.png)
+- You can see downloaded files here
 
-    - The file will be opened and you can edit there and save
+    ![Google Colab Downloaded Files](./images/google-colab-downloaded-files.png)
+</details>
 
-        ![Google Colab Modify app.py](./images/google-colab-modify-app-py.png)
+<!-----Editing the downloaded files------>
 
-- **Push your code to Hugging Face**
+<details>
+<summary><b>Editing the Application file</b></summary>
 
-    - Click on Play button
+- Click on the `app.py` file
 
-        ![Google Colab api upload_file](./images/hugging-face-push-code.png)
+    ![Google Colab Edit app.py](./images/google-colab-edit-app-py.png)
 
-    - Now in your space, you should see it is `Building`
+- The file will be opened and you can edit the `<Prompt>` and `<Example>` as per <a href="./prompts-and-examples.md">Prompts and Examples</a> and save using `⌃ + S` or `⌘ + S`
 
-        ![Hugging Face Building](./images/hugging-face-building.png)
+    ![Google Colab Modify app.py](./images/google-colab-modify-app-py.png)
+</details>
 
-    - On Succesful build, you should see `Running`
+<!-------Push your code to Hugging Face-------->
 
-        ![Hugging Face Running](./images/hugging-face-running.png)
+<details>
+<summary><b>Push your code to Hugging Face</b></summary>
 
-    - If the Building fails, you will see a `Runtime error` with some errors below
+- Click on Play button
 
-        ![Hugging Face Runtime Error](./images/hugging-face-runtime-error.png)
+    ![Google Colab api upload_file](./images/hugging-face-push-code.png)
 
-    - Click on Logs to check more details about the `error`
+- Now in your space, you should see it is `Building`
+
+    ![Hugging Face Building](./images/hugging-face-building.png)
+
+- On Succesful build, you should see `Running`
+
+    ![Hugging Face Running](./images/hugging-face-running.png)
+
+- If the Building fails, you will see a `Runtime error` with some errors below
+
+    ![Hugging Face Runtime Error](./images/hugging-face-runtime-error.png)
+
+- Click on Logs to check more details about the `error`
+</details>
 
 ---
 
